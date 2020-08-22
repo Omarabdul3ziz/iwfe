@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgba(117,120,123,.02)!important;
+}
+
+.form-control{
+    background-color: rgba(117,120,123,.02)!important;
+}
+
 .container label,.invalid-feedback{
     font-family: 'Open Sans', sans-serif;
 }
@@ -16,7 +24,7 @@
     margin-bottom: 2rem !important;
 }
 
-.custom-radio{
+.custom-radio,.form-check{
     margin-bottom: 0.5rem;
 }
 
@@ -50,6 +58,9 @@
 }
 
 .form-check-input{
-    margin-top: 0.4rem !important;
+    border: #adb5bd solid 1px;
 }
 
+.upload-file{
+    cursor: pointer;
+}
