@@ -1,6 +1,8 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
 body {
   background: #fff;
   color: #2f3138;
@@ -20,11 +22,16 @@ a:hover, a:active, a:focus {
 
 p {
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0 ;
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: .05rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -39,6 +46,32 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
 }
 
+.section-header h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00629B;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  line-height: 4rem;
+}
+
+.section-header{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2:after{
+  content: '';
+    width: 25%;
+    height: 6px;
+    display: block;
+    position: relative;
+    background-color: #00629B;
+    margin: auto;
+}
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
@@ -49,52 +82,52 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   overflow: hidden;
   position: relative;
-  background-attachment: fixed;
-
+  
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (min-width: 1024px) {
+/*@media (min-width: 1024px) {
   #intro {
     background-attachment: fixed;
   }
+}*/
+
+.cta{
+  position: relative;
+  top: 25vh;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-top: 30px;
+  transition: .3s ease;
+  transition-property: background-color, color;
+  border-radius: 5px;
 }
 
-#intro:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+.cta:hover {
+  color: #00629B;
+  background-color: #f6f7fd;
 }
 
-#intro .intro-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  top: 90px;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 15px;
+.cta:focus{
+  outline: none;
 }
-
-@media (max-width: 991px) {
-  #intro .intro-container {
-    top: 70px;
-  }
-}
-
 
 
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 #about {
-  background-color: rgb(53, 56, 63);
+  background-color: #084177;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -102,21 +135,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 60px 0 40px 0;
 }
 
-@media (min-width: 1024px) {
-  #about {
-    background-attachment: fixed;
-  }
-}
-
-#about:before {
-  content: "";
-  background: #084177;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 
 #about h2 {
   font-size: 36px;
@@ -153,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #speakers .speaker .details {
-  background: rgba(53, 56, 63, 0.884);
+  background: rgba(107, 110, 113, 0.884);
   position: absolute;
   left: 0;
   bottom: -30px;
@@ -233,6 +251,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #112363;
   font-size: 15px;
   margin-bottom: 10px;
+}
+
+#speakers img{
+  width: 100%;
+  height: auto;
 }
 
 /*--------------------------------------------------------------
@@ -327,7 +350,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #gallery .gallery-carousel .center {
-  border: 6px solid #0779e4;
+  border: 6px solid #00629B;
   margin: -10px;
   box-sizing: content-box;
   padding: 4px;

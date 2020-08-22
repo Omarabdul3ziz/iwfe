@@ -4,7 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-!(function ($) {
+$(document).ready(function () {
     "use strict";
 
     // Back to top button
@@ -165,4 +165,13 @@
         modal.find('#ticket-type').val(ticketType);
     })
 
-})(jQuery);
+        AOS.init({
+          duration: 1000,
+          once: true
+        });
+      
+      $(window).on('load', function() {
+        aos_init();
+      });
+    
+    })(jQuery);
