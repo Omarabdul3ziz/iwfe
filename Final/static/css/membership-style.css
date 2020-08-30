@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif !important;
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color: rgba(117,120,123,.05) !important;
+    overflow-x:hidden ;
+}
+
+/*Header section*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    background-color: #084177;
+    color: #fff;
+}
+
+.header h1{
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 0.1rem;
+}
+/* End of Header Section*/ 
+
+/*Benifits Section*/
+#benifits{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.section-title{
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00629B;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    line-height: 4rem;
+    margin-top: 10vh;
+    margin-bottom: 135px;
+}
+
+.section-title::after{
+    content: '';
+    width: 25%;
+    height: 6px;
+    display: block;
+    position: relative;
+    background-color: #00629B;
+    margin: auto;
+}
+
+.benifit{
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-column-gap: 10%;
+    margin-bottom: 20vh;
+    justify-items: center;
+    align-items: center;
+}
+
+.benifit p{
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.4rem;
+	margin-top: 5px;
+	line-height: 2rem;
+	font-weight: 300;
+	letter-spacing: .05rem;
+}
+
+.benifit_title{
+    display: inline-block;
+    color: #00629B;
+    margin-bottom: 2rem;
+    padding-bottom: 2px;
+    border-bottom: 5px solid #00629B;
+}
+
+.benifit h2{
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.benifits-icon{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,#13547a ,#80d0c7);
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;
+} 
+
+.benifit:nth-child(even) .text{
+    order: 2;
+}
+
+@media only screen and (max-width: 990px){
+    .benifit:nth-child(odd) .benifits-icon{
+        order: -1;
+    }
+    .benifit{
+        grid-template-columns: 1fr;
+        margin-bottom: 15vh;
+    }
+    .benifits-icon{
+        margin-bottom: 5vh;
+    }
+
+    .apps .list{
+        top: -40px !important;
+     }
+}
+
+@media only screen and (max-width:990px){
+    @media only screen and (min-width:768px) {
+        .apps .list{
+            left: 22px !important;
+         }
+    }
+}
+
+.list{
+    position: relative;
+    margin-top: 50px;
+    justify-self: start;
+}
+.list div{
+    font-size: 1.4rem;
+	margin-top: 5px;
+	line-height: 2rem;
+	font-weight: 500;
+    letter-spacing: .05rem;
+    color: #00629B;
+}
+
+.list ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 74px;
+    grid-row-gap: 20px;
+}
+
+.benifit .list ul li{
+    margin-top:20px;
+    position: relative;
+    bottom: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.element>span{
+    position: relative;
+    margin-right: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    bottom: -5px; 
+    color: #00629B;
+}
+
+.scholarships{
+    top: -34px;
+    position: relative;
+}
+
+.apps .list{
+   top: -80px;
+}
+.apps .list ul{
+    display: block;
+}
+/*Benifits Section*/
+
+/*Cards Section*/ 
+#cards{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: white;
+    padding-bottom: 5vh;
+}
+
+.card{
+    margin-bottom: 10vh;
+}
+.container .card{
+    border: none;
+}
+
+.card-body{
+   padding-left: 0 !important;
+}
+
+.card-img-top{
+    position: relative;
+    left: -10px;
+}
+.card-title{
+    color: #00629B;
+    font-size: 1.8rem;
+    margin: 10px 0 30px 0 !important;
+}
+
+.card-text{
+    padding-left: 1.25rem;
+}
+
+.card-text li{
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: #00629B;
+}
+
+.card-text li span{
+    color: black;
+}
+/*End Of Cards Section*/

@@ -1,0 +1,359 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+  background: #fff;
+  color: #2f3138;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #1d2374;
+  transition: 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color: #f8234a;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 ;
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: .05rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "open sans", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: #0e1b4d;
+}
+
+.main-page {
+  margin-top: 70px;
+}
+
+.wow {
+  visibility: hidden;
+}
+
+.section-header h2{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00629B;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  line-height: 4rem;
+}
+
+.section-header{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2:after{
+  content: '';
+    width: 25%;
+    height: 6px;
+    display: block;
+    position: relative;
+    background-color: #00629B;
+    margin: auto;
+}
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+#intro {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/events/ci5.jpg) top center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*@media (min-width: 1024px) {
+  #intro {
+    background-attachment: fixed;
+  }
+}*/
+
+.cta{
+  position: relative;
+  top: 25vh;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-top: 30px;
+  transition: .3s ease;
+  transition-property: background-color, color;
+  border-radius: 5px;
+}
+
+.cta:hover {
+  color: #00629B;
+  background-color: #f6f7fd;
+}
+
+.cta:focus{
+  outline: none;
+}
+
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+#about {
+  background-color: #084177;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  padding: 60px 0 40px 0;
+}
+
+
+#about h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#about h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+#about p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Speakers Section
+--------------------------------------------------------------*/
+#speakers {
+  padding: 60px 0 30px 0;
+}
+
+#speakers .speaker {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+#speakers .speaker .details {
+  background: rgba(107, 110, 113, 0.884);
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  right: 0;
+  text-align: center;
+  padding-top: 10px;
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#speakers .speaker .details h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#speakers .speaker .details p {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+#speakers .speaker .details .social {
+  height: 30px;
+}
+
+#speakers .speaker .details a {
+  color: #fff;
+}
+
+#speakers .speaker .details a:hover {
+  color: #0779e4;
+}
+
+#speakers .speaker:hover .details {
+  bottom: 0;
+}
+
+#speakers-details {
+  padding: 60px 0;
+}
+
+#speakers-details .details h2 {
+  color: #112363;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#speakers-details .details .social {
+  margin-bottom: 15px;
+}
+
+#speakers-details .details .social a {
+  background: #e9edfb;
+  color: #112363;
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding-top: 9px;
+}
+
+#speakers-details .details .social a:hover {
+  background: #0779e4;
+  color: #fff;
+}
+
+#speakers-details .details .social a i {
+  font-size: 18px;
+}
+
+#speakers-details .details p {
+  color: #112363;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#speakers img{
+  width: 100%;
+  height: auto;
+}
+
+/*--------------------------------------------------------------
+# Schedule Section
+--------------------------------------------------------------*/
+#schedule {
+  padding: 60px 0 60px 0;
+}
+
+#schedule .nav-tabs {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+#schedule .nav-tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+#schedule .nav-tabs a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #222831;
+  color: #fff;
+  padding: 10px 100px;
+}
+
+@media (max-width: 991px) {
+  #schedule .nav-tabs a {
+    padding: 8px 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  #schedule .nav-tabs a {
+    padding: 8px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  #schedule .nav-tabs a {
+    padding: 8px 30px;
+  }
+}
+
+#schedule .nav-tabs a.active {
+  background-color: #0779e4;
+  color: #fff;
+}
+
+#schedule .tab-pane {
+  transition: ease-in-out .2s;
+}
+
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+#gallery {
+  padding: 60px;
+  overflow: hidden;
+}
+
+#gallery .owl-nav, #gallery .owl-dots {
+  margin-top: 25px;
+  text-align: center;
+}
+
+#gallery .owl-item {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+#gallery .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+#gallery .owl-dot.active {
+  background-color: #0779e4;
+}
+
+#gallery .gallery-carousel .owl-stage-outer {
+  overflow: visible;
+}
+
+#gallery .gallery-carousel .center {
+  border: 6px solid #00629B;
+  margin: -10px;
+  box-sizing: content-box;
+  padding: 4px;
+  background: #fff;
+  z-index: 1;
+}

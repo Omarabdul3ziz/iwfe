@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgba(117,120,123,.05)!important;
+}
+
+#blog{
+    margin-top: 10vh;
+}
+
+
+
+.blog-title h1{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
+    color: #00629B;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    line-height: 4rem;
+}
+
+.blog-date{
+    color: #999999;
+    font-size: 14px;
+    margin-bottom: 20px;
+    word-spacing: 0.1rem;
+}
+
+.blog-date .date{
+    margin-left: 5px;
+}
+.blog-image img{
+    width: 100%;
+    height: auto;
+}
+
+.secodry-title h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: #00629B;
+    margin-bottom: 20px;
+}
+
+.details{
+    position: relative;
+    top: 35px;
+}
+
+.blog-details p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    text-align: justify;
+}
+
+.blog-details .important{
+    color: #00629B;
+    font-weight: 500;
+}
+
+.blog-details .quotes{
+    font-weight: 700;
+    
+}
+
+.side-bar{
+    position: relative;
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 30px;
+    top: 15vh;
+    border-left:1px solid #dee2e6!important;
+}
+
+.side-title{
+    color: #00629B;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5vh;
+   
+}
+
+.side-title::after{
+    content: '';
+    width: 25%;
+    height: 3px;
+    display: block;
+    position: relative;
+    top: 5px;
+    background-color: #00629B;
+    margin: auto;
+}
+
+.blog-list{
+    list-style: none;
+}
+
+.side-blog{
+    margin-bottom: 25px;
+}
+.side-blog a{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.side-blog a:hover{
+    text-decoration: none !important;
+}
+
+@media (max-width:992px){
+    .side-bar{
+        margin-top: 10vh;
+       border-left: none !important;
+       background: white;
+    }
+}
